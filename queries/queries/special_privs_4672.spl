@@ -1,3 +1,1 @@
-index=wineventlog (sourcetype="WinEventLog:Security" OR source="WinEventLog:Security") EventCode=4672
-| stats count by _time, host, Account_Name, Privileges
-| sort _time
+
