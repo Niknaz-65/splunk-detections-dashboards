@@ -1,0 +1,2 @@
+index=wineventlog (sourcetype="WinEventLog:Security" OR source="WinEventLog:Security") EventCode=4625
+| timechart span=15m count by host
