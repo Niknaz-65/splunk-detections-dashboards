@@ -1,13 +1,22 @@
 <dashboard version="1.1" theme="light">
-<dashboard version="1.1" theme="light">
   <label>Login Privilege Dashboard</label>
+  <description>
+    This dashboard provides visibility into user privilege use and failed logons.
+    It includes EventCode 4672 (Special Privileges Assigned) and EventCode 4625 (Failed Logons).
+  </description>
 
+  <!-- Top Accounts with Special Privileges -->
   <row>
     <panel>
       <title>Special Privileges (4672) – Top Accounts</title>
       <chart>
         <search>
-          <query>index=winlogs sourcetype=WinEventLog:Security EventCode=4672 earliest=-7d@d | stats count by Account_Name | sort - count | head 15</query>
+          <query>
+            index=winlogs sourcetype=WinEventLog:Security EventCode=4672 earliest=-7d@d
+            | stats count by Account_Name
+            | sort - count
+            | head 15
+          </query>
           <earliest>-7d@d</earliest>
           <latest>now</latest>
         </search>
@@ -17,12 +26,16 @@
     </panel>
   </row>
 
+  <!-- Recent Failed Logons -->
   <row>
     <panel>
       <title>Failed Logons (4625) – Recent Events</title>
       <event>
         <search>
-          <query>index=winlogs sourcetype=WinEventLog:Security EventCode=4625 earliest=-24h@h | table _time host Account_Name Failure_Reason IpAddress Workstation_Name</query>
+          <query>
+            index=winlogs sourcetype=WinEventLog:Security EventCode=4625 earliest=-24h@h
+            | table _time host Account_Name Failure_Reason IpAddress Workstation_Name
+          </query>
           <earliest>-24h@h</earliest>
           <latest>now</latest>
         </search>
