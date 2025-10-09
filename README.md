@@ -37,3 +37,14 @@ This dashboard uses SPL (Search Processing Language) queries in Splunk to extrac
 1. Clone this repository:
    ```bash
    git clone https://github.com/Niknaz-65/splunk-detections-dashboards.git
+
+---
+
+---
+
+## 👩‍💻 Author
+
+**Niknaz Sadehvandi (Niknaz-65)**  
+Cybersecurity Student | Splunk Enthusiast | SOC & GRC Learner  
+
+🔗 [LinkedIn Profile](https://www.linkedin.com/in/niknaz-sadehvandi-a34179325)  
