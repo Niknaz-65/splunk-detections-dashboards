@@ -1,6 +1,6 @@
 # Splunk Detections & Dashboards – Authentication Monitoring
 
-![Dashboard Preview](images/dashboard_preview.png)
+![Dashboard Preview](dashboard_preview.png)
 
 ## Overview
 SOC-focused Splunk detections and dashboards designed to monitor Windows authentication activity and privilege escalation signals.  
