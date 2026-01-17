@@ -16,7 +16,7 @@ The project analyzes Windows Security Event Logs to identify failed logon patter
 - Data Sources: Windows Security Event Logs
 - Index: `winlogs`
 - Sourcetype: `WinEventLog:Security`
-- Frameworks: SOC investigation workflow, MITRE ATT&CK (Credential Access / Privilege Escalation)
+- Frameworks: SOC investigation workflows, MITRE ATT&CK (TA0006 Credential Access, TA0004 Privilege Escalation)
 
 ## Data Collected / Artifacts
 - Event ID 4625 – Failed logon attempts
@@ -31,7 +31,7 @@ The project analyzes Windows Security Event Logs to identify failed logon patter
 4. Established baseline behavior for normal authentication patterns
 5. Identified anomalies indicating potential misuse or escalation
 
-## Findings
+## Findings / SOC Notes
 - Failed logon spikes identified during authentication anomalies
 - Privileged logons surfaced for analyst review
 - Dashboard enables rapid pivoting by user and host
