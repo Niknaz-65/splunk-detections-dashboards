@@ -3,8 +3,8 @@
 ![Dashboard Preview](dashboard_preview.png)
 
 ## Overview
-SOC-focused Splunk detections and dashboards designed to monitor Windows authentication activity and privilege escalation signals.  
-The project analyzes Windows Security Event Logs to identify failed logon patterns and high-privilege logons for triage and investigation.
+SOC-focused Splunk dashboards and detection queries designed to monitor Windows authentication activity and privilege escalation signals.
+The project analyzes Windows Security Event Logs (Event IDs 4625 and 4672) that were first baselined and validated in a separate authentication log analysis assessment, then operationalized in Splunk to identify failed logon patterns and high-privilege logons for SOC triage and investigation.
 
 ## Why This Project Matters to SOC Teams
 - Enables early detection of brute-force and credential misuse activity
@@ -37,10 +37,10 @@ The project analyzes Windows Security Event Logs to identify failed logon patter
 - Dashboard enables rapid pivoting by user and host
 - Signals suitable for alerting with threshold tuning
 
-## Outcome
-- SOC-ready authentication monitoring dashboards validated
-- Detections suitable for escalation or correlation with endpoint/network logs
-- Recommended alert thresholds and ongoing tuning
+## Evidence
+- SOC_Log_Analysis_Failed_Login_Assessment.pdf (baseline authentication validation)
+- Splunk authentication dashboard screenshots (Event IDs 4625, 4672)
+- SPL detection queries for failed logons and privileged access
 
 ## Evidence
 - Splunk authentication dashboard (Event IDs 4625, 4672)
