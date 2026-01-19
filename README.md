@@ -1,4 +1,4 @@
-# Splunk Detections & Dashboards – Authentication Monitoring
+# SOC Dashboarding & Alert Triage – Authentication Monitoring (Splunk SIEM)
 
 ![Dashboard Preview](dashboard_preview.png)
 
@@ -43,8 +43,9 @@ The project analyzes Windows Security Event Logs to identify failed logon patter
 - Recommended alert thresholds and ongoing tuning
 
 ## Evidence
-- Dashboard screenshots stored in `/images`
-- SPL queries documented in repository
+- Splunk authentication dashboard (Event IDs 4625, 4672)
+- SOC_Log_Analysis_Failed_Login_Assessment.pdf
+- SPL detection queries for failed logons and privileged access
 
 ## Repository Structure
 ```text
