@@ -38,13 +38,8 @@ The project analyzes Windows Security Event Logs (Event IDs 4625 and 4672) that 
 - Signals suitable for alerting with threshold tuning
 
 ## Evidence
-- SOC_Log_Analysis_Failed_Login_Assessment.pdf (baseline authentication validation)
+- [SOC_Log_Analysis_Failed_Login_Assessment.pdf](SOC_Log_Analysis_Failed_Login_Assessment.pdf)
 - Splunk authentication dashboard screenshots (Event IDs 4625, 4672)
-- SPL detection queries for failed logons and privileged access
-
-## Evidence
-- Splunk authentication dashboard (Event IDs 4625, 4672)
-- SOC_Log_Analysis_Failed_Login_Assessment.pdf
 - SPL detection queries for failed logons and privileged access
 
 ## Repository Structure
@@ -52,7 +47,7 @@ The project analyzes Windows Security Event Logs (Event IDs 4625 and 4672) that 
 /images        → dashboard screenshots  
 /queries       → SPL detection queries  
 README.md      → project documentation
----
+```
 
 ## Author
 **Niknaz Sadehvandi**  
